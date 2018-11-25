@@ -6,15 +6,15 @@ public class Status {
 	private Boolean accepted;
 	private Boolean approvedRepairCosts;
 	private Boolean inRepair;
-	private Boolean readyToReceive;
+	private Boolean readyForPickUp;
 	private Boolean resignation;
 
-	public Status(Long id, Boolean accepted, Boolean approvedRepairCosts, Boolean inRepair, Boolean readyToReceive, Boolean resignation) {
+	public Status(Long id, Boolean accepted, Boolean approvedRepairCosts, Boolean inRepair, Boolean readyForPickUp, Boolean resignation) {
 		this.id = id;
 		this.accepted = accepted;
 		this.approvedRepairCosts = approvedRepairCosts;
 		this.inRepair = inRepair;
-		this.readyToReceive = readyToReceive;
+		this.readyForPickUp = readyForPickUp;
 		this.resignation = resignation;
 	}
 
@@ -53,11 +53,11 @@ public class Status {
 	}
 
 	public Boolean getReadyToReceive() {
-		return readyToReceive;
+		return readyForPickUp;
 	}
 
 	public void setReadyToReceive(Boolean readyToReceive) {
-		this.readyToReceive = readyToReceive;
+		this.readyForPickUp = readyToReceive;
 	}
 
 	public Boolean getResignation() {
